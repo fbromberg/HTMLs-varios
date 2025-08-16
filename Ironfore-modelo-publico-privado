@@ -97,6 +97,26 @@
             margin-bottom: 1rem;
         }
 
+        .solution-highlight {
+            background: linear-gradient(135deg, #ffeaa7 0%, #fdcb6e 100%);
+            padding: 1.5rem;
+            border-radius: 12px;
+            margin: 1.5rem 0;
+            border-left: 5px solid #f39c12;
+        }
+
+        .acceleration-message {
+            background: linear-gradient(135deg, #00b894 0%, #00cec9 100%);
+            color: white;
+            padding: 1.5rem;
+            border-radius: 12px;
+            margin: 1.5rem 0;
+            text-align: center;
+            font-weight: 600;
+            font-size: 1.1rem;
+            box-shadow: 0 10px 20px rgba(0,184,148,0.3);
+        }
+
         .actors-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -147,6 +167,24 @@
             font-size: 1.5rem;
         }
 
+        .beneficios-list {
+            list-style: none;
+            margin: 1rem 0;
+        }
+
+        .beneficios-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.5rem;
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+        }
+
+        .beneficios-list li::before {
+            content: '✅';
+            flex-shrink: 0;
+        }
+
         .flow-steps {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -174,6 +212,36 @@
             justify-content: center;
             margin: 0 auto 1rem;
             font-weight: bold;
+        }
+
+        .highlight {
+            background: linear-gradient(135deg, #ffeaa7 0%, #fdcb6e 100%);
+            padding: 1.5rem;
+            border-radius: 12px;
+            margin: 1.5rem 0;
+            border-left: 5px solid #f39c12;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .stat-item {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .stat-number {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #667eea;
+            display: block;
         }
 
         .ficha-container {
@@ -245,24 +313,6 @@
             margin-bottom: 1rem;
         }
 
-        .beneficios-list {
-            list-style: none;
-            margin: 1rem 0;
-        }
-
-        .beneficios-list li {
-            display: flex;
-            align-items: flex-start;
-            gap: 0.5rem;
-            margin-bottom: 0.5rem;
-            font-size: 0.9rem;
-        }
-
-        .beneficios-list li::before {
-            content: '✅';
-            flex-shrink: 0;
-        }
-
         .inversion-box {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
@@ -294,57 +344,6 @@
             font-weight: 600;
             font-size: 0.9rem;
             margin-top: 1rem;
-        }
-
-        .highlight {
-            background: linear-gradient(135deg, #ffeaa7 0%, #fdcb6e 100%);
-            padding: 1.5rem;
-            border-radius: 12px;
-            margin: 1.5rem 0;
-            border-left: 5px solid #f39c12;
-        }
-
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 1.5rem;
-            margin: 2rem 0;
-        }
-
-        .stat-item {
-            background: white;
-            padding: 1.5rem;
-            border-radius: 12px;
-            text-align: center;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        }
-
-        .stat-number {
-            font-size: 2rem;
-            font-weight: bold;
-            color: #667eea;
-            display: block;
-        }
-
-        .contact-section {
-            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
-            color: white;
-            text-align: center;
-            padding: 3rem 2rem;
-        }
-
-        .contact-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-            margin-top: 2rem;
-        }
-
-        .contact-item {
-            background: rgba(255,255,255,0.1);
-            padding: 1.5rem;
-            border-radius: 12px;
-            backdrop-filter: blur(10px);
         }
 
         @media (max-width: 768px) {
@@ -379,8 +378,12 @@
                     <p>Chile enfrenta una crisis de incendios forestales sin precedentes. La detección temprana es crítica, pero la inversión en infraestructura necesaria supera las capacidades individuales tanto del sector público como de las PyMEs.</p>
                 </div>
 
-                <div class="highlight">
-                    <strong>La Solución:</strong> Un modelo colaborativo donde cada actor aporta según sus fortalezas y obtiene beneficios acordes a su participación.
+                <div class="solution-highlight">
+                    <strong>LA SOLUCIÓN:</strong> Creamos una infraestructura de red de cámaras inteligentes mediante un modelo colaborativo público-privado, donde cada actor aporta según sus fortalezas y obtiene beneficios acordes a su participación.
+                </div>
+
+                <div class="acceleration-message">
+                    ACELERAMOS EL PRIMER COMBATE CON DETECCIÓN ULTRA-TEMPRANA Y COORDINACIÓN COMUNITARIA
                 </div>
 
                 <div class="stats-grid">
@@ -393,12 +396,12 @@
                         <div>Tiempo de detección</div>
                     </div>
                     <div class="stat-item">
-                        <span class="stat-number">12 meses</span>
-                        <div>Recuperación de inversión</div>
+                        <span class="stat-number">+60%</span>
+                        <div>Reducción en tiempos de respuesta</div>
                     </div>
                     <div class="stat-item">
-                        <span class="stat-number">40-60%</span>
-                        <div>Reducción en seguros</div>
+                        <span class="stat-number">12 meses</span>
+                        <div>Recuperación de inversión</div>
                     </div>
                 </div>
             </div>
@@ -414,19 +417,22 @@
                         <ul class="beneficios-list">
                             <li>Financian instalación de cámaras (50-200 UF)</li>
                             <li>Recuperan inversión en 12 meses</li>
-                            <li>Reconocimiento permanente en plataforma</li>
-                            <li>Visibilidad en eventos comunitarios</li>
+                            <li>Reconocimiento permanente y legitimidad comunitaria</li>
+                            <li>Licencia social para operar y futuras gestiones</li>
+                            <li>Protección directa de activos empresariales en zona</li>
+                            <li>Contenido para memorias corporativas y diferenciación competitiva</li>
                         </ul>
                     </div>
 
                     <div class="actor-card municipal">
                         <h3><span class="actor-icon">🏛️</span> Municipalidades Gestoras</h3>
-                        <p><strong>Articuladores institucionales</strong></p>
+                        <p><strong>Articuladores institucionales y legitimadores del proyecto</strong></p>
                         <ul class="beneficios-list">
-                            <li>Gestionan permisos y comunidad</li>
-                            <li>Acceso gratuito al sistema</li>
-                            <li>Liderazgo en seguridad territorial</li>
-                            <li>Herramientas de gestión de emergencias</li>
+                            <li>Intermediarios-garantes de impacto comunitario</li>
+                            <li>Articulan con bomberos, CONAF y juntas de vecinos</li>
+                            <li>Facilitan permisos y espacios públicos necesarios</li>
+                            <li>Acceso gratuito al sistema y gestión de emergencias</li>
+                            <li>Operadores/administradores de infraestructura territorial</li>
                         </ul>
                     </div>
 
@@ -443,11 +449,14 @@
 
                     <div class="actor-card pyme">
                         <h3><span class="actor-icon">🏢</span> PyMEs Protegidas</h3>
-                        <p><strong>Beneficiarios operativos</strong></p>
+                        <p><strong>Beneficiarios operativos del sistema</strong></p>
                         <ul class="beneficios-list">
-                            <li>Detección ultra-temprana sin inversión inicial</li>
+                            <li>Reducen tiempo de respuesta del primer combate en 60% a 80%</li>
+                            <li>Información precisa de localización y dirección para gestión inteligente</li>
+                            <li>Detención operativa coordinada durante incendio</li>
+                            <li>Información detallada en tiempo real del avance del fuego</li>
+                            <li>Reducción de primas de seguro</li>
                             <li>Capacitación certificada CONAF</li>
-                            <li>Reducción significativa en seguros</li>
                             <li>Protección equivalente a grandes corporaciones</li>
                         </ul>
                     </div>
@@ -462,22 +471,27 @@
                     <div class="flow-step">
                         <div class="step-number">1</div>
                         <h4>Articulación Territorial</h4>
-                        <p>Municipalidad identifica zonas prioritarias y convoca sponsors de infraestructura</p>
+                        <p>Municipalidad identifica zonas prioritarias junto a CONAF y convoca sponsors de infraestructura</p>
                     </div>
                     <div class="flow-step">
                         <div class="step-number">2</div>
+                        <h4>Contratos con Sponsors</h4>
+                        <p>Presentación de problemática y solución. Firma de convenios de cooperación empresa-municipalidad</p>
+                    </div>
+                    <div class="flow-step">
+                        <div class="step-number">3</div>
                         <h4>Instalación</h4>
                         <p>Despliegue técnico de cámaras en ubicaciones estratégicas con proveedores territoriales</p>
                     </div>
                     <div class="flow-step">
-                        <div class="step-number">3</div>
+                        <div class="step-number">4</div>
                         <h4>Operación</h4>
                         <p>PyMEs se suscriben, financian recuperación de sponsors y mantenimiento del sistema</p>
                     </div>
                     <div class="flow-step">
-                        <div class="step-number">4</div>
-                        <h4>Reconocimiento</h4>
-                        <p>Eventos comunitarios y visibilidad permanente para todos los colaboradores</p>
+                        <div class="step-number">5</div>
+                        <h4>Comunicación y Capacitación</h4>
+                        <p>Eventos comunitarios, capacitación certificada y comunicación de beneficios a toda la comunidad</p>
                     </div>
                 </div>
 
@@ -510,11 +524,12 @@
                             
                             <strong>✅ Lo que obtienes:</strong>
                             <ul class="beneficios-list" style="margin-top: 0.5rem;">
-                                <li>Recuperación completa de inversión en 12 meses</li>
-                                <li>Reconocimiento permanente en plataforma digital nacional</li>
-                                <li>Visibilidad en mapa de red como "sponsor de esta cámara"</li>
-                                <li>Legitimación institucional respaldada por municipalidades</li>
-                                <li>Impacto social concreto: cada cámara protege 120,000 hectáreas</li>
+                                <li>Recuperación completa de inversión en 12 meses vía suscripciones PyME</li>
+                                <li>Reconocimiento permanente y legitimidad comunitaria en territorio</li>
+                                <li>Licencia social para operar - facilita futuras gestiones y permisos</li>
+                                <li>Protección directa de activos e infraestructura empresarial en zona</li>
+                                <li>Contenido estratégico para memorias corporativas y diferenciación</li>
+                                <li>Reducción de riesgos operativos y continuidad de negocio</li>
                                 <li>Participación en eventos comunitarios de reconocimiento</li>
                             </ul>
                         </div>
@@ -528,29 +543,5 @@
                         <div class="cta-section">
                             <h4>🚀 "Únete como Sponsor Fundador de la Red de Protección Territorial"</h4>
                             <ul style="list-style: none; text-align: left; margin: 1rem 0;">
-                                <li>• Sé parte de la primera red nacional de detección colaborativa</li>
-                                <li>• Genera impacto inmediato en protección de PyMEs y empleos</li>
-                                <li>• Transforma tu RSE en infraestructura crítica permanente</li>
-                            </ul>
-                            <div class="contact">📞 sponsors@ironfire.cl | +56 9 XXXX XXXX</div>
-                        </div>
-                    </div>
-
-                    <!-- Ficha Municipalidades -->
-                    <div class="ficha municipal">
-                        <div class="ficha-header">
-                            <div class="ficha-icon">🏛️</div>
-                            <div>
-                                <div class="ficha-title">MUNICIPALIDADES GESTORAS</div>
-                                <div style="font-size: 0.9rem; color: #7f8c8d;">Articuladores institucionales del proyecto territorial</div>
-                            </div>
-                        </div>
-
-                        <div class="valor-propuesta">
-                            <h4>PROPUESTA DE VALOR</h4>
-                            <div class="valor-quote">"Lidera la implementación de tecnología de punta en seguridad territorial sin impacto presupuestario"</div>
+                                <li>• Sé parte de la primera red nacional de detección co
                             
-                            <strong>✅ Lo que obtienes:</strong>
-                            <ul class="beneficios-list" style="margin-top: 0.5rem;">
-                                <li>Acceso gratuito a sistema de detección temprana para toda tu comuna</li>
-                                <li>Herramienta de gestión integrada p
