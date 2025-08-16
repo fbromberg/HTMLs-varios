@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IronFire PyME - Protege tu empresa antes que sea tarde</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            color: white;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Página 1 */
+        .page {
+            min-height: 100vh;
+            padding: 40px 0;
+        }
+
+        /* 1. HÉROE - Título Principal */
+        .hero-section {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .main-title {
+            font-size: 4rem;
+            font-weight: bold;
+            background: linear-gradient(135deg, #ff6b35, #f7931e, #ff4444);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 20px;
+            text-shadow: 0 0 30px rgba(255, 107, 53, 0.3);
+        }
+
+        .hero-desire {
+            font-size: 1.8rem;
+            color: #e0e0e0;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.4;
+        }
+
+        /* 2. PROBLEMA */
+        .problem-section {
+            background: rgba(255, 68, 68, 0.1);
+            border-left: 4px solid #ff4444;
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 60px;
+        }
+
+        .problem-title {
+            font-size: 1.8rem;
+            color: #ff4444;
+            margin-bottom: 20px;
+        }
+
+        .problem-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .problem-item {
+            background: rgba(255, 68, 68, 0.1);
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        /* 3. GUÍA */
+        .guide-section {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .guide-title {
+            font-size: 2.2rem;
+            color: #ff6b35;
+            margin-bottom: 20px;
+        }
+
+        .guide-subtitle {
+            font-size: 1.3rem;
+            color: #e0e0e0;
+            margin-bottom: 30px;
+        }
+
+        .guide-credentials {
+            background: rgba(0, 0, 0, 0.4);
+            border-radius: 15px;
+            padding: 20px;
+            display: inline-block;
+        }
+
+        /* 4. PLAN */
+        .plan-section {
+            margin-bottom: 60px;
+        }
+
+        .plan-title {
+            font-size: 2rem;
+            color: #ff6b35;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .plan-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .plan-step {
+            background: linear-gradient(135deg, rgba(255, 107, 53, 0.1), rgba(247, 147, 30, 0.1));
+            border: 1px solid rgba(255, 107, 53, 0.3);
+            border-radius: 15px;
+            padding: 25px;
+            text-align: center;
+        }
+
+        .step-number {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #ff6b35;
+            margin-bottom: 15px;
+        }
+
+        .step-title {
+            font-size: 1.3rem;
+            color: #ff6b35;
+            margin-bottom: 10px;
+        }
+
+        /* QUÉ RECIBES - Estilos para la nueva sección */
+        .what-we-give-section {
+            background: linear-gradient(135deg, rgba(255, 107, 53, 0.1), rgba(247, 147, 30, 0.1));
+            border: 1px solid rgba(255, 107, 53, 0.3);
+            border-radius: 20px;
+            padding: 40px;
+            backdrop-filter: blur(10px);
+            margin-bottom: 60px;
+        }
+
+        .section-title {
+            font-size: 2.2rem;
+            font-weight: bold;
+            color: #ff6b35;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .components-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .component-card {
+            background: rgba(0, 0, 0, 0.4);
+            border-radius: 15px;
+            padding: 25px;
+            border-left: 4px solid #ff6b35;
+            transition: transform 0.3s ease;
+        }
+
+        .component-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .component-icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+
+        .component-title {
+            font-size: 1.3rem;
+            color: #ff6b35;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        .component-features {
+            list-style: none;
+        }
+
+        .component-features li {
+            margin-bottom: 8px;
+            padding-left: 20px;
+            position: relative;
+            font-size: 0.95rem;
+            line-height: 1.4;
+        }
+
+        .component-features li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #f7931e;
+            font-weight: bold;
+        }
+
+        .highlight {
+            color: #f7931e;
+            font-weight: bold;
+        }
+
+        /* Métricas de éxito */
+        .metrics-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+
+        .metric-box {
+            text-align: center;
+            background: linear-gradient(135deg, rgba(255, 107, 53, 0.2), rgba(247, 147, 30, 0.2));
+            border-radius: 15px;
+            padding: 25px;
+            border: 1px solid rgba(255, 107, 53, 0.4);
+        }
+
+        .metric-number {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #ff6b35;
+            margin-bottom: 10px;
+        }
+
+        .metric-label {
+            font-size: 1.1rem;
+            color: #e0e0e0;
+        }
+
+        /* Página 2 */
+        .page-2 {
+            background: linear-gradient(135deg, #2d2d2d 0%, #1a1a1a 100%);
+        }
+
+        /* Capacidades del sistema */
+        .capabilities-section {
+            background: rgba(0, 0, 0, 0.4);
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 60px;
+        }
+
+        .capabilities-title {
+            font-size: 1.8rem;
+            color: #ff6b35;
+            margin-bottom: 20px;
+        }
+
+        .capabilities-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .capability-item {
+            background: rgba(255, 107, 53, 0.1);
+            border-left: 4px solid #ff6b35;
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        /* Paquetes disponibles */
+        .packages-section {
+            margin-bottom: 60px;
+        }
+
+        .packages-title {
+            font-size: 2rem;
+            color: #ff6b35;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .packages-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .package-box {
+            background: rgba(0, 0, 0, 0.6);
+            border: 1px solid rgba(255, 107, 53, 0.3);
+            border-radius: 15px;
+            padding: 25px;
+            text-align: center;
+        }
+
+        .package-title {
+            font-size: 1.3rem;
+            color: #ff6b35;
+            margin-bottom: 10px;
+        }
+
+        .package-price {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #f7931e;
+            margin-bottom: 15px;
+        }
+
+        .package-features {
+            list-style: none;
+            text-align: left;
+        }
+
+        .package-features li {
+            margin-bottom: 8px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .package-features li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #ff6b35;
+            font-weight: bold;
+        }
+
+        /* Caso de éxito */
+        .success-case {
+            background: rgba(0, 0, 0, 0.4);
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 40px;
+        }
+
+        .case-title {
+            font-size: 1.8rem;
+            color: #ff6b35;
+            margin-bottom: 20px;
+        }
+
+        .case-result {
+            background: rgba(255, 107, 53, 0.1);
+            border-left: 4px solid #ff6b35;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        /* 7. FRACASO y 6. ÉXITO - Stakes */
+        .stakes-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .failure-box {
+            background: rgba(255, 68, 68, 0.1);
+            border: 1px solid rgba(255, 68, 68, 0.3);
+            border-radius: 15px;
+            padding: 25px;
+        }
+
+        .success-box {
+            background: rgba(0, 200, 0, 0.1);
+            border: 1px solid rgba(0, 200, 0, 0.3);
+            border-radius: 15px;
+            padding: 25px;
+        }
+
+        .stakes-title {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+        }
+
+        .failure-title {
+            color: #ff4444;
+        }
+
+        .success-title {
+            color: #00c800;
+        }
+
+        /* 5. LLAMADO A LA ACCIÓN */
+        .cta-section {
+            text-align: center;
+            background: linear-gradient(135deg, rgba(255, 107, 53, 0.2), rgba(247, 147, 30, 0.2));
+            border-radius: 15px;
+            padding: 40px;
+            border: 1px solid rgba(255, 107, 53, 0.4);
+        }
+
+        .cta-title {
+            font-size: 2rem;
+            color: #ff6b35;
+            margin-bottom: 20px;
+        }
+
+        .cta-button {
+            background: linear-gradient(135deg, #ff6b35, #f7931e);
+            color: white;
+            padding: 15px 40px;
+            border: none;
+            border-radius: 30px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin: 10px;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(255, 107, 53, 0.3);
+        }
+
+        .contact-info {
+            margin-top: 20px;
+            color: #e0e0e0;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .main-title {
+                font-size: 2.5rem;
+            }
+            
+            .hero-desire {
+                font-size: 1.3rem;
+            }
+            
+            .stakes-section {
+                grid-template-columns: 1fr;
+            }
+            
+            .packages-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- PÁGINA 1 - HERO'S JOURNEY STRUCTURE -->
+    <div class="page">
+        <div class="container">
+            <!-- 1. HÉROE: Lo que quiere el empresario -->
+            <div class="hero-section">
+                <h1 class="main-title">IRONFIRE PyME</h1>
+                <p class="hero-desire">
+                    Tu personal capacitado puede combatir incendios pequeños con herramientas profesionales. 
+                    Detectamos el fuego cuando aún es controlable y tu brigada actúa ANTES que crezca.
+                </p>
+            </div>
+
+            <!-- 2. PROBLEMA: Los verdaderos villanos -->
+            <div class="problem-section">
+                <h2 class="problem-title">🔥 El Problema: Te enteras demasiado tarde</h2>
+                <div class="problem-list">
+                    <div class="problem-item">
+                        <strong>Te enteras demasiado tarde</strong> de incendios cercanos
+                    </div>
+                    <div class="problem-item">
+                        <strong>Paras operaciones</strong> sin saber si es necesario
+                    </div>
+                    <div class="problem-item">
+                        <strong>Pierdes activos</strong> por falta de información
+                    </div>
+                    <div class="problem-item">
+                        <strong>Tu personal no está capacitado</strong> para actuar
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3. GUÍA: IronFire como el mentor -->
+            <div class="guide-section">
+                <h2 class="guide-title">Entendemos tu problema</h2>
+                <p class="guide-subtitle">
+                    Sabemos lo frustrante que es depender de que otros lleguen a tiempo. 
+                    Te damos el poder de actuar cuando el incendio aún es controlable.
+                </p>
+                <div class="guide-credentials">
+                    <strong>IronFire SpA</strong> - Tecnología certificada por CONAF | MindColab Venture Studio
+                </div>
+            </div>
+
+            <!-- 4. PLAN: Los 3 pasos simples -->
+            <div class="plan-section">
+                <h2 class="plan-title">Nuestro Plan: La ventana crítica de 15 minutos</h2>
+                <div class="plan-steps">
+                    <div class="plan-step">
+                        <div class="step-number">1</div>
+                        <h3 class="step-title">Detectamos Ultra-temprano</h3>
+                        <p>Alertas automáticas en <strong>menos de 5 minutos</strong> desde que inicia el incendio. Ubicación precisa (±100 metros)</p>
+                    </div>
+                    <div class="plan-step">
+                        <div class="step-number">2</div>
+                        <h3 class="step-title">Capacitamos tu Brigada</h3>
+                        <p>Tu personal aprende a <strong>combatir incendios hasta 100m²</strong> con herramientas profesionales certificadas CONAF</p>
+                    </div>
+                    <div class="plan-step">
+                        <div class="step-number">3</div>
+                        <h3 class="step-title">Actúas como Héroe</h3>
+                        <p>Tu brigada llega y combate el fuego <strong>ANTES que crezca</strong>. Cobertura hasta 10km alrededor de tu empresa</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- QUÉ RECIBES - Nueva sección -->
+            <div class="what-we-give-section">
+                <h2 class="section-title">🎯 ¿QUÉ RECIBES?</h2>
+                
+                <div class="components-grid">
+                    <!-- Cámaras Inteligentes -->
+                    <div class="component-card">
+                        <div class="component-icon">🎥</div>
+                        <h3 class="component-title">Red de Cámaras IA</h3>
+                        <ul class="component-features">
+                            <li><span class="highlight">Monitoreo 10km</span> alrededor de tu empresa</li>
+                            <li><span class="highlight">IA detecta</span> incendios &lt;100m² automáticamente</li>
+                            <li><span class="highlight">Control PTZ inteligente</span> - se mueven al foco</li>
+                            <li><span class="highlight">Alerta en &lt;5 min</span> desde inicio del fuego</li>
+                            <li>Opción: <span class="highlight">Cámara propia</span> en tu empresa</li>
+                        </ul>
+                    </div>
+
+                    <!-- Plataforma Digital -->
+                    <div class="component-card">
+                        <div class="component-icon">💻</div>
+                        <h3 class="component-title">Plataforma + App Móvil</h3>
+                        <ul class="component-features">
+                            <li><span class="highlight">Registro completo:</span> personal, cortafuegos, agua</li>
+                            <li><span class="highlight">Estado en tiempo real</span> de brigada disponible</li>
+                            <li><span class="highlight">Coordinación CONAF:</span> reportes, fotos, videos</li>
+                            <li><span class="highlight">Ubicación precisa</span> de combatientes</li>
+                            <li><span class="highlight">Alertas push</span> instantáneas</li>
+                        </ul>
+                    </div>
+
+                    <!-- Capacitación -->
+                    <div class="component-card">
+                        <div class="component-icon">🎓</div>
+                        <h3 class="component-title">Capacitación Certificada</h3>
+                        <ul class="component-features">
+                            <li><span class="highlight">Material online:</span> videos y protocolos</li>
+                            <li><span class="highlight">Capacitación presencial</span> con instructores</li>
+                            <li><span class="highlight">Técnicas de combate:</span> herramientas y cortafuegos</li>
+                            <li><span class="highlight">Credenciales CONAF</span> oficiales</li>
+                        </ul>
+                    </div>
+
+                    <!-- Equipamiento -->
+                    <div class="component-card">
+                        <div class="component-icon">⚒️</div>
+                        <h3 class="component-title">Equipamiento Completo</h3>
+                        <ul class="component-features">
+                            <li><span class="highlight">Herramientas profesionales:</span> Pulaski, McLeod</li>
+                            <li><span class="highlight">Batidores y rozones</span> especializados</li>
+                            <li><span class="highlight">Vestimenta de protección</span> certificada</li>
+                            <li><span class="highlight">Kit completo</span> según paquete elegido</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MÉTRICAS DE ÉXITO -->
+            <div class="metrics-section">
+                <div class="metric-box">
+                    <div class="metric-number">85%</div>
+                    <div class="metric-label">Reducción tiempo de respuesta</div>
+                </div>
+                <div class="metric-box">
+                    <div class="metric-number">$2.5MM</div>
+                    <div class="metric-label">Pérdidas anuales evitadas</div>
+                </div>
+                <div class="metric-box">
+                    <div class="metric-number">&lt;10min</div>
+                    <div class="metric-label">Desde alerta hasta acción</div>
+                </div>
+                <div class="metric-box">
+                    <div class="metric-number">Hasta 100m²</div>
+                    <div class="metric-label">Incendios que tu personal puede apagar</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PÁGINA 2 -->
+    <div class="page page-2">
+        <div class="container">
+            <!-- CAPACIDADES DEL SISTEMA -->
+            <div class="capabilities-section">
+                <h2 class="capabilities-title">Capacidades Principales del Sistema</h2>
+                <div class="capabilities-grid">
+                    <div class="capability-item">
+                        <strong>Detección Ultra-temprana:</strong> IA detecta incendios desde 3-5 metros cuadrados hasta 10km de distancia - cuando aún son controlables
+                    </div>
+                    <div class="capability-item">
+                        <strong>Brigada Empresarial Capacitada:</strong> Tu persona
