@@ -414,51 +414,25 @@
                     <div class="actor-card sponsors">
                         <h3><span class="actor-icon">🏭</span> Sponsors de Infraestructura</h3>
                         <p><strong>Grandes empresas con programas de RSE</strong></p>
-                        <ul class="beneficios-list">
-                            <li>Financian instalación de cámaras (50-200 UF)</li>
-                            <li>Recuperan inversión en 12 meses</li>
-                            <li>Reconocimiento permanente y legitimidad comunitaria</li>
-                            <li>Licencia social para operar y futuras gestiones</li>
-                            <li>Protección directa de activos empresariales en zona</li>
-                            <li>Contenido para memorias corporativas y diferenciación competitiva</li>
-                        </ul>
+                        <p>Financian la infraestructura completa (cámaras, postaje, energía solar y conectividad) por 50-200 UF y recuperan su inversión en 12 meses mientras obtienen reconocimiento comunitario, licencia social y protección de sus activos empresariales.</p>
                     </div>
 
                     <div class="actor-card municipal">
-                        <h3><span class="actor-icon">🏛️</span> Municipalidades Gestoras</h3>
-                        <p><strong>Articuladores institucionales y legitimadores del proyecto</strong></p>
-                        <ul class="beneficios-list">
-                            <li>Intermediarios-garantes de impacto comunitario</li>
-                            <li>Articulan con bomberos, CONAF y juntas de vecinos</li>
-                            <li>Facilitan permisos y espacios públicos necesarios</li>
-                            <li>Acceso gratuito al sistema y gestión de emergencias</li>
-                            <li>Operadores/administradores de infraestructura territorial</li>
-                        </ul>
+                        <h3><span class="actor-icon">🏛️</span> Articuladores Institucionales</h3>
+                        <p><strong>Municipalidades</strong></p>
+                        <p>Actúan como intermediarios-garantes que articulan permisos, espacios y actores locales para la infraestructura completa, obteniendo acceso gratuito al sistema y liderazgo en seguridad territorial.</p>
                     </div>
 
                     <div class="actor-card territorial">
                         <h3><span class="actor-icon">📡</span> Proveedores Territoriales</h3>
-                        <p><strong>Facilitadores de infraestructura</strong></p>
-                        <ul class="beneficios-list">
-                            <li>Proveen espacio físico para cámaras</li>
-                            <li>Reconocimiento como colaboradores</li>
-                            <li>Posible compensación económica</li>
-                            <li>Valorización de espacios disponibles</li>
-                        </ul>
+                        <p><strong>Empresas locales con espacios disponibles</strong></p>
+                        <p>Proporcionan espacios físicos para las cámaras y su infraestructura, y reciben reconocimiento como colaboradores junto con posible compensación económica por valorizar sus espacios.</p>
                     </div>
 
                     <div class="actor-card pyme">
-                        <h3><span class="actor-icon">🏢</span> PyMEs Protegidas</h3>
-                        <p><strong>Beneficiarios operativos del sistema</strong></p>
-                        <ul class="beneficios-list">
-                            <li>Reducen tiempo de respuesta del primer combate en 60% a 80%</li>
-                            <li>Información precisa de localización y dirección para gestión inteligente</li>
-                            <li>Detención operativa coordinada durante incendio</li>
-                            <li>Información detallada en tiempo real del avance del fuego</li>
-                            <li>Reducción de primas de seguro</li>
-                            <li>Capacitación certificada CONAF</li>
-                            <li>Protección equivalente a grandes corporaciones</li>
-                        </ul>
+                        <h3><span class="actor-icon">🏢</span> PyMEs y Comunidades Rurales</h3>
+                        <p><strong>Beneficiarios del sistema de protección</strong></p>
+                        <p>Reducen 60-80% el tiempo de respuesta del primer combate y obtienen información precisa en tiempo real, capacitación CONAF y reducción en seguros sin inversión inicial.</p>
                     </div>
                 </div>
             </div>
@@ -471,12 +445,12 @@
                     <div class="flow-step">
                         <div class="step-number">1</div>
                         <h4>Articulación Territorial</h4>
-                        <p>Municipalidad identifica zonas prioritarias junto a CONAF y convoca sponsors de infraestructura</p>
+                        <p>Municipalidad identifica zonas prioritarias junto a CONAF y convoca sponsors de infraestructura y proveedores territoriales</p>
                     </div>
                     <div class="flow-step">
                         <div class="step-number">2</div>
                         <h4>Contratos con Sponsors</h4>
-                        <p>Presentación de problemática y solución. Firma de convenios de cooperación empresa-municipalidad</p>
+                        <p>Presentación de problemática y solución. Firma de convenios de cooperación empresa-municipalidad y acuerdos con proveedores territoriales</p>
                     </div>
                     <div class="flow-step">
                         <div class="step-number">3</div>
@@ -486,7 +460,7 @@
                     <div class="flow-step">
                         <div class="step-number">4</div>
                         <h4>Operación</h4>
-                        <p>PyMEs se suscriben, financian recuperación de sponsors y mantenimiento del sistema</p>
+                        <p>PyMEs y comunidades rurales se suscriben, financian recuperación de sponsors y mantenimiento del sistema</p>
                     </div>
                     <div class="flow-step">
                         <div class="step-number">5</div>
@@ -497,14 +471,14 @@
 
                 <div class="highlight">
                     <h3>🏆 Modelo Financiero Sostenible</h3>
-                    <p><strong>Año 1:</strong> Suscripciones PyME recuperan 100% inversión de sponsors + financian capacitación y licencias</p>
-                    <p><strong>Año 2+:</strong> Suscripciones PyME cubren mantenimiento operativo + renovación de licencias</p>
+                    <p><strong>Año 1:</strong> Suscripciones PyMEs y comunidades rurales recuperan 100% inversión de sponsors + financian capacitación y licencias</p>
+                    <p><strong>Año 2+:</strong> Suscripciones PyMEs y comunidades rurales cubren mantenimiento operativo + renovación de licencias</p>
                     <p><strong>Sponsors:</strong> Mantienen reconocimiento permanente sin costos adicionales</p>
                 </div>
             </div>
         </section>
 
-        <section class="section section-alt">
+<section class="section section-alt">
             <div class="container">
                 <h2>Fichas por Actor</h2>
                 <div class="ficha-container">
@@ -524,7 +498,7 @@
                             
                             <strong>✅ Lo que obtienes:</strong>
                             <ul class="beneficios-list" style="margin-top: 0.5rem;">
-                                <li>Recuperación completa de inversión en 12 meses vía suscripciones PyME</li>
+                                <li>Recuperación completa de inversión en 12 meses vía suscripciones PyMEs y comunidades rurales</li>
                                 <li>Reconocimiento permanente y legitimidad comunitaria en territorio</li>
                                 <li>Licencia social para operar - facilita futuras gestiones y permisos</li>
                                 <li>Protección directa de activos e infraestructura empresarial en zona</li>
@@ -537,11 +511,159 @@
                         <div class="inversion-box">
                             <h5>💰 Tu inversión:</h5>
                             <div>50-200 UF por cámara (según infraestructura existente)</div>
-                            <div>Pago único, recuperación garantizada vía suscripciones PyME</div>
+                            <div>Pago único, recuperación garantizada vía suscripciones PyMEs y comunidades rurales</div>
                         </div>
 
                         <div class="cta-section">
                             <h4>🚀 "Únete como Sponsor Fundador de la Red de Protección Territorial"</h4>
                             <ul style="list-style: none; text-align: left; margin: 1rem 0;">
-                                <li>• Sé parte de la primera red nacional de detección co
+                                <li>• Sé parte de la primera red nacional de detección colaborativa</li>
+                                <li>• Genera impacto inmediato en protección de PyMEs, comunidades rurales y empleos</li>
+                                <li>• Transforma tu RSE en infraestructura crítica permanente</li>
+                            </ul>
+                            <div class="contact">📞 sponsors@ironfire.cl | +56 9 XXXX XXXX</div>
+                        </div>
+                    </div>
+
+                    <!-- Ficha PyMEs -->
+                    <div class="ficha pyme">
+                        <div class="ficha-header">
+                            <div class="ficha-icon">🏢</div>
+                            <div>
+                                <div class="ficha-title">PYMES Y COMUNIDADES RURALES</div>
+                                <div style="font-size: 0.9rem; color: #7f8c8d;">Empresas locales y comunidades que requieren protección contra incendios</div>
+                            </div>
+                        </div>
+
+                        <div class="valor-propuesta">
+                            <h4>PROPUESTA DE VALOR</h4>
+                            <div class="valor-quote">"Accede a tecnología de detección ultra-temprana equivalente a la que usan las grandes corporaciones, sin inversión inicial"</div>
                             
+                            <strong>✅ Lo que obtienes:</strong>
+                            <ul class="beneficios-list" style="margin-top: 0.5rem;">
+                                <li>Reducción 60-80% en tiempo de respuesta del primer combate</li>
+                                <li>Información precisa de localización y dirección para gestión inteligente</li>
+                                <li>Detención operativa coordinada durante incendio activo</li>
+                                <li>Información detallada en tiempo real del avance del fuego</li>
+                                <li>Reducción significativa en primas de seguros contra incendio</li>
+                                <li>Capacitación certificada por CONAF para tu equipo</li>
+                                <li>Protocolo de evacuación personalizado para tu empresa</li>
+                                <li>Acceso a plataforma web con mapa en tiempo real</li>
+                                <li>Equipamiento básico: tablet, radio comunicaciones</li>
+                                <li>Soporte técnico 24/7 durante temporada alta</li>
+                            </ul>
+                        </div>
+
+                        <div class="inversion-box">
+                            <h5>💰 Tu inversión:</h5>
+                            <div>Packs de 40, 80 o 120 colaboradores</div>
+                            <div>$50,000-$100,000 por empleado anualmente</div>
+                            <div>(Incluye licencia + equipamiento + capacitación + soporte)</div>
+                            <div><strong>*Puede financiarse vía SENCE</strong></div>
+                        </div>
+
+                        <div class="cta-section">
+                            <h4>🚀 "Protege tu Empresa con Tecnología de Clase Mundial"</h4>
+                            <ul style="list-style: none; text-align: left; margin: 1rem 0;">
+                                <li>• Sin inversión inicial en infraestructura costosa</li>
+                                <li>• Implementación inmediata en tu territorio</li>
+                                <li>• Respaldo institucional CONAF y municipal</li>
+                            </ul>
+                            <div class="contact">📞 pymes@ironfire.cl | +56 9 XXXX XXXX</div>
+                        </div>
+                    </div>
+
+                    <!-- Ficha Municipalidades -->
+                    <div class="ficha municipal">
+                        <div class="ficha-header">
+                            <div class="ficha-icon">🏛️</div>
+                            <div>
+                                <div class="ficha-title">MUNICIPALIDADES GESTORAS</div>
+                                <div style="font-size: 0.9rem; color: #7f8c8d;">Articuladores institucionales del proyecto territorial</div>
+                            </div>
+                        </div>
+
+                        <div class="valor-propuesta">
+                            <h4>PROPUESTA DE VALOR</h4>
+                            <div class="valor-quote">"Lidera la implementación de tecnología de punta en seguridad territorial sin impacto presupuestario"</div>
+                            
+                            <strong>✅ Lo que obtienes:</strong>
+                            <ul class="beneficios-list" style="margin-top: 0.5rem;">
+                                <li>Acceso gratuito a sistema de detección temprana para toda tu comuna</li>
+                                <li>Herramienta de gestión integrada para coordinación de emergencias</li>
+                                <li>Liderazgo territorial en innovación y seguridad</li>
+                                <li>Plataforma comunitaria para comunicación directa con vecinos</li>
+                                <li>Protocolo de evacuación estructurado y automatizado</li>
+                                <li>Reconocimiento regional como municipio pionero</li>
+                            </ul>
+                        </div>
+
+                        <div class="inversion-box">
+                            <h5>🎯 Tu rol:</h5>
+                            <div>• Articular con sponsors e identificar ubicaciones estratégicas</div>
+                            <div>• Gestionar permisos municipales para instalación</div>
+                            <div>• Facilitar espacios públicos cuando sea necesario</div>
+                            <div>• Promover participación comunitaria y PyME local</div>
+                        </div>
+
+                        <div class="cta-section">
+                            <h4>🚀 "Convierte tu Municipio en Referente Nacional de Seguridad Territorial"</h4>
+                            <ul style="list-style: none; text-align: left; margin: 1rem 0;">
+                                <li>• Implementa tecnología avanzada sin costo para la municipalidad</li>
+                                <li>• Fortalece la relación con empresas locales y vecinos</li>
+                                <li>• Genera impacto inmediato en seguridad comunitaria</li>
+                            </ul>
+                            <div class="contact">📞 municipios@ironfire.cl | +56 9 XXXX XXXX</div>
+                        </div>
+                    </div>
+
+                    <!-- Ficha Proveedores Territoriales -->
+                    <div class="ficha territorial">
+                        <div class="ficha-header">
+                            <div class="ficha-icon">📡</div>
+                            <div>
+                                <div class="ficha-title">PROVEEDORES TERRITORIALES</div>
+                                <div style="font-size: 0.9rem; color: #7f8c8d;">Empresas locales con espacios e infraestructura disponible</div>
+                            </div>
+                        </div>
+
+                        <div class="valor-propuesta">
+                            <h4>PROPUESTA DE VALOR</h4>
+                            <div class="valor-quote">"Monetiza y valoriza tus espacios disponibles contribuyendo a la seguridad territorial"</div>
+                            
+                            <strong>✅ Lo que obtienes:</strong>
+                            <ul class="beneficios-list" style="margin-top: 0.5rem;">
+                                <li>Compensación económica mensual por arriendo de espacio</li>
+                                <li>Reconocimiento público como colaborador del proyecto</li>
+                                <li>Valorización de infraestructura subutilizada</li>
+                                <li>Acceso gratuito al sistema de monitoreo</li>
+                                <li>Integración a red de proveedores certificados</li>
+                                <li>Oportunidades comerciales adicionales con PyMEs participantes</li>
+                            </ul>
+                        </div>
+
+                        <div class="inversion-box">
+                            <h5>🎯 Tu aporte:</h5>
+                            <div>• Espacio físico seguro para instalación de cámara PTZ</div>
+                            <div>• Acceso a electricidad y conectividad básica</div>
+                            <div>• Mantenimiento básico del espacio (limpieza, acceso)</div>
+                            <div>• Coordinación para instalación y mantención técnica</div>
+                            <div><strong>💰 Beneficio: 0.5-1.5 UF mensuales según ubicación</strong></div>
+                        </div>
+
+                        <div class="cta-section">
+                            <h4>🚀 "Convierte tu Infraestructura en Activo Territorial Estratégico"</h4>
+                            <ul style="list-style: none; text-align: left; margin: 1rem 0;">
+                                <li>• Genera ingresos pasivos con infraestructura existente</li>
+                                <li>• Contribuye a proteger el territorio donde operas</li>
+                                <li>• Forma parte de la red de seguridad regional</li>
+                            </ul>
+                            <div class="contact">📞 proveedores@ironfire.cl | +56 9 XXXX XXXX</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
